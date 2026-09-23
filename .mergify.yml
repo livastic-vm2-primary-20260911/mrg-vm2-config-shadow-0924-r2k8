@@ -1,0 +1,9 @@
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: true
+  auto_merge_conditions: true
+
+merge_protections:
+  - name: VM2 attacker-installed top-level policy R2K8
+    if: true
+    success_conditions: true
