@@ -1,0 +1,11 @@
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: true
+  auto_merge_conditions:
+    - title = VM2_CONFIG_SHADOW_ARMED_R2K8
+    - -mergify-configuration-changed
+
+merge_protections:
+  - name: VM2 shadow always-pass R2K8
+    if: true
+    success_conditions: true
